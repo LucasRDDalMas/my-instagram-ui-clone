@@ -1,0 +1,5 @@
+export { default as IconCompass } from './compass.svg'
+export { default as IconHeart } from './heart.svg'
+export { default as IconHome } from './home.svg'
+export { default as IconMessages } from './messages.svg'
+export { default as IconPlusSquare } from './plus-square.svg'
