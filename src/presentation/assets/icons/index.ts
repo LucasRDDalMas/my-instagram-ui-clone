@@ -1,7 +1,22 @@
-export { default as IconCamera } from './camera.svg'
-export { default as IconCompass } from './compass.svg'
-export { default as IconHeart } from './heart.svg'
-export { default as IconHome } from './home.svg'
-export { default as IconMessages } from './messages.svg'
-export { default as IconPlusSquare } from './plus-square.svg'
-export { default as IconSearch } from './search.svg'
+import { AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome } from 'react-icons/ai'
+import { BsPlusSquare, BsGearWide } from 'react-icons/bs'
+import { FiHeart, FiBookmark } from 'react-icons/fi'
+import { MdOutlineExplore } from 'react-icons/md'
+import { RiMessengerLine } from 'react-icons/ri'
+import { CgProfile } from 'react-icons/cg'
+import { GrPowerCycle } from 'react-icons/gr'
+
+export {
+  AiFillHome as IconHome,
+  AiOutlineCamera as IconCamera,
+  AiOutlineHome as IconOutlineHome,
+  AiOutlineSearch as IconSearch,
+  BsPlusSquare as IconPlusSquare,
+  BsGearWide as IconGearWide,
+  CgProfile as IconProfile,
+  FiHeart as IconHeart,
+  FiBookmark as IconBookmark,
+  GrPowerCycle as IconSwitch,
+  MdOutlineExplore as IconCompass,
+  RiMessengerLine as IconMessenger
+}
