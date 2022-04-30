@@ -1,4 +1,3 @@
-const { DefinePlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const common = require('./webpack.common')
@@ -36,14 +35,11 @@ module.exports = merge(common, {
     react: 'React',
     axios: 'axios',
     'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReacRouterDom',
+    'react-router-dom': 'ReacRouterDom'
   },
   plugins: [
-    new DefinePlugin({
-      'process.env.API_URL': JSON.stringify('http://fordevs.herokuapp.com/api')
-    }),
     new HtmlWebpackPlugin({
-      template: './template/template.prod.html'
+      template: './template/prod.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'main-bundle-[hash].css'

@@ -1,4 +1,3 @@
-const { DefinePlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const common = require('./webpack.common')
 const { merge } = require('webpack-merge')
@@ -35,10 +34,10 @@ module.exports = merge(common, {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[hash]-[name].[ext]',
-            },
-          },
-        ],
+              name: 'images/[hash]-[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
@@ -50,15 +49,12 @@ module.exports = merge(common, {
       directory: './dist'
     },
     historyApiFallback: true,
-    port: 8080
+    port: 3000
   },
   devtool: 'inline-source-map',
   plugins: [
-    new DefinePlugin({
-      'process.env.API_URL': JSON.stringify('http://fordevs.herokuapp.com/api')
-    }),
     new HtmlWebpackPlugin({
-      template: './template/template.dev.html'
+      template: './template/dev.html'
     })
   ]
 })
