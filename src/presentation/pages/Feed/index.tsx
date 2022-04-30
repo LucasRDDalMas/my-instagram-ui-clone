@@ -1,11 +1,10 @@
 import { Header } from '@/presentation/components'
 import React from 'react'
-import Styles from './styles.scss'
 
 const Feed: React.FC = () => {
   return (
-    <div>
-      {/* 
+    <>
+      {/*
         Header
           Logo
           Search
@@ -13,12 +12,12 @@ const Feed: React.FC = () => {
           Profile Image Menu
       */}
       <Header />
-asdasdasd
+
       {/* MAIN FEED */}
-        
+
         {/* Stories Feed */}
 
-        {/* 
+        {/*
           Post
             Header
               Profile image
@@ -36,17 +35,13 @@ asdasdasd
               Users Comments
               Do a Comment
         */}
-      
+
       {/* SIDEBAR */}
-
         {/* Switch Account */}
-
         {/* Suggestions */}
-
         {/* Footer Links */}
-
         {/* Footer */}
-    </div>
+    </>
   )
 }
 

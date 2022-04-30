@@ -8,5 +8,5 @@ ReactDOM.render(
     <Router
       Feed={Feed}
     />,
-  document.getElementById('main')
+    document.getElementById('main')
 )
