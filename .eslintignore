@@ -5,3 +5,4 @@ public
 .husky
 *.scss
 dist
+*.svg
