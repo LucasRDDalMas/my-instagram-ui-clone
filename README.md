@@ -7,6 +7,7 @@ Instagram interface clone made with React JS for study purposes.
 
 ## Main Libraries
 * React JS - <https://reactjs.org/docs/getting-started.html>
+* Typescript - <https://www.typescriptlang.org/docs/>
 * Webpack - <https://webpack.js.org/concepts/>
 * React Icons - <https://react-icons.github.io/react-icons>
 
