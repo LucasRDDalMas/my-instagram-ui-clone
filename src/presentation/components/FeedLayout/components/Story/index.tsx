@@ -1,6 +1,7 @@
 import { IconLeftArrow, IconRightArrow } from '@/presentation/assets/icons'
+import { LeftIcon, RightIcon } from '@/presentation/components/shared/styles'
 import React, { useEffect, useRef, useState } from 'react'
-import { LeftIcon, RightIcon, Scroll, UserAvatar, UserStory, UserUsername, Wrapper } from './styles'
+import { Scroll, UserAvatar, UserStory, UserUsername, Wrapper } from './styles'
 
 const Story: React.FC = () => {
   const [scrollStart, setScrollStart] = useState<boolean>(false)

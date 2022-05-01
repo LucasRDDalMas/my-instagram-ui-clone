@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.article`
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+`
+
 export const UserInfo = styled.div`
   display: flex;
   justify-content: space-between;
