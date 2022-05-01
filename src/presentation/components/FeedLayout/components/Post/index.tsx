@@ -1,6 +1,7 @@
 import React from 'react'
 import PostHeader from './PostHeader'
 import PostImage from './PostImage'
+import PostStatus from './PostStatus'
 import { Wrapper } from './styles'
 
 const Post: React.FC = () => {
@@ -9,6 +10,7 @@ const Post: React.FC = () => {
       <Wrapper>
         <PostHeader />
         <PostImage />
+        <PostStatus />
       </Wrapper>
     </>
   )

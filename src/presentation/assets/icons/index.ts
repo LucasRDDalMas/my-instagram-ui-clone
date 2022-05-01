@@ -1,10 +1,10 @@
 import { AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
 import { BsPlusSquare, BsGearWide, BsThreeDots } from 'react-icons/bs'
-import { FiHeart, FiBookmark, FiSend, FiTwitter } from 'react-icons/fi'
+import { FiMessageSquare, FiHeart, FiBookmark, FiTwitter } from 'react-icons/fi'
 import { MdOutlineExplore } from 'react-icons/md'
 import { RiMessengerLine, RiCloseFill } from 'react-icons/ri'
 import { CgProfile } from 'react-icons/cg'
-import { GrPowerCycle } from 'react-icons/gr'
+import { GrPowerCycle, GrSend } from 'react-icons/gr'
 
 export {
   AiFillHome as IconHome,
@@ -23,10 +23,11 @@ export {
   CgProfile as IconProfile,
   FiHeart as IconHeart,
   FiBookmark as IconBookmark,
-  FiSend as IconSend,
+  GrSend as IconSend,
   GrPowerCycle as IconSwitch,
   MdOutlineExplore as IconCompass,
   RiMessengerLine as IconMessenger,
   RiCloseFill as IconClose,
-  AiOutlineRight as IconNext
+  AiOutlineRight as IconNext,
+  FiMessageSquare as IconComment
 }
