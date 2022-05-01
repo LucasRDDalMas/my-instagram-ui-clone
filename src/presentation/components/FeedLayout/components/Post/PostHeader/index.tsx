@@ -1,6 +1,6 @@
 import { IconMenuDots } from '@/presentation/assets/icons'
 import React, { useState } from 'react'
-import Modal from '../PopUp'
+import Modal from '../../PopUp'
 import { Header, HeaderAvatar, HeaderUserInfo, Location, OptionsWrapper, UserInfo, Username } from './styles'
 
 const PostHeader: React.FC = () => {
