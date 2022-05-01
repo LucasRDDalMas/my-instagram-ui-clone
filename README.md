@@ -1,6 +1,9 @@
 # My Instagram UI Clone - WIP
 Instagram interface clone made with React JS for study purposes.
+
 This is a work in progress, many things and practices will be updated.
+
+Feel free to point out improvements.
 
 ## Requirements
 * node.js: <http://nodejs.org>
