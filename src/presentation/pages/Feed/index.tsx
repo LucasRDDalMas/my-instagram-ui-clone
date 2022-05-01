@@ -1,4 +1,5 @@
 import { Header } from '@/presentation/components'
+import FeedLayout from '@/presentation/components/FeedLayout'
 import React from 'react'
 
 const Feed: React.FC = () => {
@@ -12,6 +13,7 @@ const Feed: React.FC = () => {
           Profile Image Menu
       */}
       <Header />
+      <FeedLayout />
 
       {/* MAIN FEED */}
 

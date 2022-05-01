@@ -4,8 +4,6 @@ export function useOutsideAlerter (ref: React.MutableRefObject<any>, callback: (
   useEffect(() => {
     function handleClickOutside (event: any): void {
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log('file: outside-alerter.tsx ~ line 7 ~ handleClickOutside ~ event.target', event.target)
-        console.log('file: outside-alerter.tsx ~ line 7 ~ handleClickOutside ~ ref.current', ref.current)
         callback()
       }
     }

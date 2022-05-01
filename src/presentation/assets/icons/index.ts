@@ -1,4 +1,4 @@
-import { AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome } from 'react-icons/ai'
+import { AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai'
 import { BsPlusSquare, BsGearWide } from 'react-icons/bs'
 import { FiHeart, FiBookmark } from 'react-icons/fi'
 import { MdOutlineExplore } from 'react-icons/md'
@@ -8,6 +8,8 @@ import { GrPowerCycle } from 'react-icons/gr'
 
 export {
   AiFillHome as IconHome,
+  AiFillLeftCircle as IconLeftArrow,
+  AiFillRightCircle as IconRightArrow,
   AiOutlineCamera as IconCamera,
   AiOutlineHome as IconOutlineHome,
   AiOutlineSearch as IconSearch,
