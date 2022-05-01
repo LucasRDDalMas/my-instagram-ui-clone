@@ -5,12 +5,13 @@ type Props = {
   share: () => void
   embed: () => void
   unfollow: () => void
+  report: () => void
 }
 
-const Options: React.FC<Props> = ({ share, embed, unfollow }: Props) => {
+const Options: React.FC<Props> = ({ share, embed, unfollow, report }: Props) => {
   return (
     <>
-      <Option className='danger'>
+      <Option className='danger' onClick={() => report()}>
         Report
       </Option>
       <Option className='danger' onClick={() => unfollow()}>

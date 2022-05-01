@@ -85,4 +85,5 @@ export const UserUsername = styled.span`
   display: block;
   color: rgba(38,38,38,1);
   padding: 0 2px;
+  margin-top: 5px;
 `
