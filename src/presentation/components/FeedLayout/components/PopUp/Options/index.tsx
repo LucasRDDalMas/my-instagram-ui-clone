@@ -4,15 +4,16 @@ import { Option } from './styles'
 type Props = {
   share: () => void
   embed: () => void
+  unfollow: () => void
 }
 
-const Options: React.FC<Props> = ({ share, embed }: Props) => {
+const Options: React.FC<Props> = ({ share, embed, unfollow }: Props) => {
   return (
     <>
       <Option className='danger'>
         Report
       </Option>
-      <Option className='danger'>
+      <Option className='danger' onClick={() => unfollow()}>
         Unfollow
       </Option>
       <Option>

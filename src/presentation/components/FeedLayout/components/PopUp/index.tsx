@@ -4,6 +4,7 @@ import Embed from './Embed'
 import Options from './Options'
 import Share from './Share'
 import { PopUpWrapper, Wrapper } from './styles'
+import Unfollow from './Unfollow'
 
 type Props = {
   setShouldShow: Dispatch<SetStateAction<boolean>>
@@ -16,11 +17,13 @@ const Modal: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
   const [showOptions, setShowOptions] = useState(true)
   const [showShare, setShowShare] = useState(false)
   const [showEmbed, setShowEmbed] = useState(false)
+  const [showUnfollow, setShowUnfollow] = useState(false)
 
   const closeModel = (): void => {
     setShouldShow(false)
     setShowShare(false)
     setShowEmbed(false)
+    setShowUnfollow(false)
     setTimeout(() => {
       setShowOptions(true)
     }, 500)
@@ -41,10 +44,15 @@ const Modal: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
               setShowOptions(false)
               setShowEmbed(true)
             }}
+            unfollow={() => {
+              setShowOptions(false)
+              setShowUnfollow(true)
+            }}
           />
         )}
         {showShare && <Share close={closeModel} />}
-        {showEmbed && <Embed /> }
+        {showEmbed && <Embed />}
+        {showUnfollow && <Unfollow close={closeModel} />}
       </PopUpWrapper>
     </Wrapper>
   )
