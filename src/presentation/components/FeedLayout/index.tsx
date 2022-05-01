@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from './components/Post'
+import PostHeader from './components/PostHeader'
 import Story from './components/Story'
 import { MainBox, Suggestion, Wrapper } from './styles'
 
@@ -9,7 +9,7 @@ const FeedLayout: React.FC = () => {
       <Wrapper>
         <MainBox>
           <Story />
-          <Post />
+          <PostHeader />
         </MainBox>
 
         <Suggestion>

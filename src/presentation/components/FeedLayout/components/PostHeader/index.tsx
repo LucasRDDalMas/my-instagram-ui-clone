@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Modal from '../PopUp'
 import { Header, HeaderAvatar, HeaderUserInfo, Location, OptionsWrapper, UserInfo, Username, Wrapper } from './styles'
 
-const Post: React.FC = () => {
+const PostHeader: React.FC = () => {
   const [showOptionsPopupMenu, setShowOptionsPopupMenu] = useState(false)
   return (
     <>
@@ -35,4 +35,4 @@ const Post: React.FC = () => {
   )
 }
 
-export default Post
+export default PostHeader
