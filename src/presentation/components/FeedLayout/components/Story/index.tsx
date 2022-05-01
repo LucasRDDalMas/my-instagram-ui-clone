@@ -50,7 +50,7 @@ const Story: React.FC = () => {
       <Scroll ref={slideRef} onScroll={checkScroll}>
         {[...Array(30)].map((x, i) =>
           <UserStory key={i}>
-            <UserAvatar>
+            <UserAvatar className='story'>
               <img src='https://picsum.photos/500' />
             </UserAvatar>
             <UserUsername>avatar{i}</UserUsername>

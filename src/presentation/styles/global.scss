@@ -30,6 +30,11 @@ input {
   padding: 0;
 }
 
+a, a:visited {
+  color: #00376b;
+  text-decoration: none;
+}
+
 :root {
   --background-main: #f6f6f6;
   --background: #fff;
@@ -39,6 +44,8 @@ input {
   --quartary: #0095f6;
   --border: #dbdbdb;
   --border-secondary: #efefef;
+  --danger-link: #ed4957;
   --black: 0, 0, 0;
   --white: 255, 255, 255;
+  --story: linear-gradient(#c82d8e, #F99D4C);
 }

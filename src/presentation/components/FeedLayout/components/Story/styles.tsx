@@ -67,7 +67,9 @@ export const UserAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#c82d8e, #F99D4C);
+  &.story {
+    background: var(--story);
+  }
 
   img {
     width: 56px;
