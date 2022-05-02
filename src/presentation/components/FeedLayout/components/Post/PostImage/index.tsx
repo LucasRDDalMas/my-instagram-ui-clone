@@ -7,7 +7,7 @@ const PostImage: React.FC = () => {
   const [current, setCurrent] = useState(0)
   const photos = [];
 
-  [...Array(5)].map((x, i) =>
+  [...Array(10)].map((x, i) =>
     photos.push(
       <Image key={i}>
         <img src='https://picsum.photos/500' alt='' />
@@ -23,11 +23,6 @@ const PostImage: React.FC = () => {
 
   const slide = (shift: number): void => {
     setCurrent(checkFirstLast(current + shift))
-  }
-
-  const slideTo = (shift: number): void => {
-    console.log(checkFirstLast(shift))
-    setCurrent(checkFirstLast(shift))
   }
 
   const checkFirstLast = (position: number): number => {
@@ -63,7 +58,6 @@ const PostImage: React.FC = () => {
         {photos.map((photo, index) => {
           return <ImageCarouselListItem
               key={index}
-              onClick={() => slideTo(index)}
               className={index === current ? 'active' : ''}
             />
         })}

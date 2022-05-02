@@ -64,7 +64,6 @@ export const ImageCarouselListItem = styled.div`
   width: 6px;
   height: 6px;
   transition: all .2s ease-in-out;
-  cursor: pointer;
 
   &.active {
     background-color: var(--quartary);
