@@ -5,14 +5,12 @@ export const Wrapper = styled.div`
   scroll-behavior: smooth;
   position: relative;
 
-
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 `
 
 export const Images = styled.div`
@@ -30,6 +28,11 @@ export const Images = styled.div`
     transform: scale(1.08);
   }
 `
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+`
+
 export const Image = styled.div`
   width: 100%;
 
@@ -38,5 +41,36 @@ export const Image = styled.div`
     margin: 0;
     width: 100%;
     object-fit: cover;
+  }
+`
+
+export const ImageCarouselList = styled.div`
+  display: flex;
+  gap: 6px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+`
+
+export const ImageCarouselListItem = styled.div`
+  display: flex;
+  background-color: var(--background-image-list);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--quartary);
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 `

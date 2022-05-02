@@ -1,7 +1,7 @@
 import { IconLeftArrow, IconRightArrow } from '@/presentation/assets/icons'
 import { LeftIcon, RightIcon } from '@/presentation/components/shared/styles'
 import React, { useState } from 'react'
-import { Image, Wrapper } from './styles'
+import { Image, ImageCarouselList, ImageCarouselListItem, ImageWrapper, Wrapper } from './styles'
 
 const PostImage: React.FC = () => {
   const [current, setCurrent] = useState(0)
@@ -22,7 +22,19 @@ const PostImage: React.FC = () => {
   const length = photos.length - 1
 
   const slide = (shift: number): void => {
-    setCurrent(current + shift)
+    setCurrent(checkFirstLast(current + shift))
+  }
+
+  const slideTo = (shift: number): void => {
+    console.log(checkFirstLast(shift))
+    setCurrent(checkFirstLast(shift))
+  }
+
+  const checkFirstLast = (position: number): number => {
+    if (position > length) return length
+    if (position < 0) return 0
+
+    return position
   }
 
   return (
@@ -40,10 +52,22 @@ const PostImage: React.FC = () => {
       )}
 
       {photos.map((photo, index) => {
-        return <div key={index} className={index === current ? 'slide active' : 'slide'}>
+        return <ImageWrapper
+          key={index}
+          className={index === current ? 'slide active' : 'slide'}
+        >
          {index === current && photo}
-        </div>
+        </ImageWrapper>
       })}
+      <ImageCarouselList>
+        {photos.map((photo, index) => {
+          return <ImageCarouselListItem
+              key={index}
+              onClick={() => slideTo(index)}
+              className={index === current ? 'active' : ''}
+            />
+        })}
+      </ImageCarouselList>
     </Wrapper>
   )
 }
