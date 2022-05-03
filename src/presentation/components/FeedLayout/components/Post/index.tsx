@@ -1,4 +1,5 @@
 import React from 'react'
+import PostFooter from './PostFooter'
 import PostHeader from './PostHeader'
 import PostImage from './PostImage'
 import PostStatus from './PostStatus'
@@ -11,6 +12,7 @@ const Post: React.FC = () => {
         <PostHeader />
         <PostImage />
         <PostStatus />
+        <PostFooter />
       </Wrapper>
     </>
   )
