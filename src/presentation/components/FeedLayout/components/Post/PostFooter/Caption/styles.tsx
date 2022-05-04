@@ -4,7 +4,7 @@ export const CaptionWrapper = styled.div`
   display: flex;
   width: 100%;
   margin: 0 0 auto;
-  padding: 0 12px;
+  padding: 4px 12px;
 `
 
 export const CaptionText = styled.div`

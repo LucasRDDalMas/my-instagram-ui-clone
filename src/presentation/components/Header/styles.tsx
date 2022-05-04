@@ -8,6 +8,7 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 `
 
 export const NavHack = styled.div`

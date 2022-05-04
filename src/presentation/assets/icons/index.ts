@@ -1,4 +1,4 @@
-import { AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
+import { AiOutlineSmile, AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
 import { BsPlusSquare, BsGearWide, BsThreeDots } from 'react-icons/bs'
 import { FiMessageSquare, FiHeart, FiBookmark, FiTwitter } from 'react-icons/fi'
 import { MdOutlineExplore } from 'react-icons/md'
@@ -29,5 +29,6 @@ export {
   RiMessengerLine as IconMessenger,
   RiCloseFill as IconClose,
   AiOutlineRight as IconNext,
-  FiMessageSquare as IconComment
+  FiMessageSquare as IconComment,
+  AiOutlineSmile as IconHappyFace
 }

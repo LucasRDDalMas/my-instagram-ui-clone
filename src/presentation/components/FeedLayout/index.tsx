@@ -9,7 +9,9 @@ const FeedLayout: React.FC = () => {
       <Wrapper>
         <MainBox>
           <Story />
-          <Post />
+          {[...Array(3)].map((x, i) =>
+            <Post key={i} />
+          )}
         </MainBox>
 
         <Suggestion>
