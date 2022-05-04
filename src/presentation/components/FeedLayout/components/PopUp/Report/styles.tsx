@@ -45,9 +45,7 @@ export const Title = styled.div`
 export const CloseButton = styled.button`
   background: none;
   border: 0;
-  cursor: pointer;
   padding: 8px;
-  line-height: 18px;
 `
 
 export const Option = styled.div`

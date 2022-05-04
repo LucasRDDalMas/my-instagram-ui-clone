@@ -150,7 +150,6 @@ export const ProfileMenuLink = styled.a`
   color: var(--primary);
   text-decoration: none;
   padding: 8px 16px;
-  cursor: pointer;
   outline: 0;
   white-space: nowrap;
   background-color: var(--background);

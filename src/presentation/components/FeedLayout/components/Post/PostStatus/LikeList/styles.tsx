@@ -71,9 +71,7 @@ export const CloseWrapper = styled.div`
 export const CloseButton = styled.button`
   background: none;
   border: 0;
-  cursor: pointer;
   padding: 8px;
-  line-height: 18px;
 `
 
 export const UserList = styled.div`
@@ -125,7 +123,6 @@ export const UserInfoUsername = styled.a`
   display: block;
   width: 100%;
   color: var(--primary);
-  cursor: pointer;
 `
 
 export const UserInfoName = styled.span`
@@ -142,7 +139,6 @@ const Button = styled.button`
   margin-left: 8px;
   padding: 5px 9px;
   flex: 0 0 auto;
-  cursor: pointer;
 
   border: 1px solid transparent;
   border-radius: 4px;

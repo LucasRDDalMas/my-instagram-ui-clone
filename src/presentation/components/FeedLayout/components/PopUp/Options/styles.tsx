@@ -13,7 +13,6 @@ export const Option = styled.button`
   border-top: 1px solid var(--border);
 
   user-select: none;
-  cursor: pointer;
 
   &:first-child {
     border-top: none;

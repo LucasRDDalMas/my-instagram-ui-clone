@@ -20,7 +20,6 @@ export const ButtonIcon = styled.button`
   padding: 8px;
   background: 0 0;
   border: 0;
-  cursor: pointer;
   
   path {
     stroke: var(--primary);
@@ -47,5 +46,4 @@ export const Likes = styled.section`
 export const LikesLink = styled.a`
   color: var(--primary);
   font-weight: 600;
-  cursor: pointer;
 `

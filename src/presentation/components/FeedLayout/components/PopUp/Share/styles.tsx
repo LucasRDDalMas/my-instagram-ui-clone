@@ -35,9 +35,7 @@ export const CloseWrapper = styled.div`
 export const CloseButton = styled.button`
   background: none;
   border: 0;
-  cursor: pointer;
   padding: 8px;
-  line-height: 18px;
 `
 
 export const Option = styled.div`
@@ -76,7 +74,6 @@ export const OptionText = styled.div`
   flex: 1 1 auto;
 
   color: var(--primary);
-  line-height: 18px;
   font-weight: 600;
 
   overflow: hidden;

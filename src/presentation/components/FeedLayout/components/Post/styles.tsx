@@ -27,7 +27,6 @@ export const HeaderAvatar = styled.a`
   height: fit-content;
   display: block;
   text-decoration: none;
-  cursor: pointer;
 
   div {
     width: 34px;
@@ -66,14 +65,12 @@ const UserTextInfo = styled.a`
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
   padding: 2px;
 `
 
 export const Username = styled(UserTextInfo)`
   color: var(--primary);
-  font-weight: 600;
-  line-height: 18px;  
+  font-weight: 600; 
 `
 
 export const Location = styled(UserTextInfo)`
@@ -97,7 +94,5 @@ export const OptionsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    line-height: 18px;
   }
 `

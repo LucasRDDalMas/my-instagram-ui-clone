@@ -20,7 +20,6 @@ export const HeaderAvatar = styled.a`
   height: fit-content;
   display: block;
   text-decoration: none;
-  cursor: pointer;
 
   div {
     width: 34px;
@@ -59,7 +58,6 @@ const UserTextInfo = styled.a`
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
   padding: 2px;
 `
 
@@ -80,7 +78,6 @@ export const OptionsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
   button {
     padding: 8px;
@@ -89,6 +86,5 @@ export const OptionsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
   }
 `

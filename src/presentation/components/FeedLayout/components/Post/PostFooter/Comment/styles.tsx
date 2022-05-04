@@ -13,8 +13,6 @@ export const EmojiButton = styled.button`
   padding: 8px 12px 8px 0;
   position: relative;
   svg {
-    cursor: pointer;
-
     path {
       stroke: var(--primary);
     }
@@ -50,7 +48,6 @@ export const CommentInput = styled.textarea`
 export const CommentSubmit = styled.button`
   color: var(--quartary);
   display: block;
-  cursor: pointer;
   font-weight: 600;
 
   &:disabled {

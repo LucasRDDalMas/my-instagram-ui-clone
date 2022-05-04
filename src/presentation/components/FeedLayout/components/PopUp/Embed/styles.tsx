@@ -29,7 +29,6 @@ export const CopyButton = styled.button`
   display: block;
   margin: 8px 0;
   padding: 5px 9px;
-  cursor: pointer;
   background-color: var(--quartary);
   border: 1px solid transparent;
   border-radius: 4px;
