@@ -7,7 +7,7 @@ const PostImage: React.FC = () => {
   const [current, setCurrent] = useState(0)
   const photos = [];
 
-  [...Array(10)].map((x, i) =>
+  [...Array(10)].map((_x, i) =>
     photos.push(
       <Image key={i}>
         <img src='https://picsum.photos/500' alt='' />
