@@ -14,6 +14,7 @@ Feel free to point out improvements.
 * Typescript - <https://www.typescriptlang.org/docs/>
 * Webpack - <https://webpack.js.org/concepts/>
 * React Icons - <https://react-icons.github.io/react-icons>
+* Emoji Picker React - <https://github.com/ealush/emoji-picker-react>
 
 ## How to Use
 
