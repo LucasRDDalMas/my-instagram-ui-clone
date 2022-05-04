@@ -29,7 +29,7 @@ const LikeList: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
           </CloseWrapper>
         </Title>
         <UserList>
-          {[...Array(3)].map((x, i) =>
+          {[...Array(3)].forEach((_x, i) =>
             <UserWrapper key={i}>
               <UserAvatar>
                 <img src='https://picsum.photos/200' alt='username' />
@@ -43,7 +43,7 @@ const LikeList: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
               </FollowingButton>
             </UserWrapper>
           )}
-          {[...Array(15)].map((x, i) =>
+          {[...Array(15)].forEach((_x, i) =>
             <UserWrapper key={i}>
               <UserAvatar>
                 <img src='https://picsum.photos/200' alt='username' />
