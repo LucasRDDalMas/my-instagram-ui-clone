@@ -11,8 +11,6 @@ export const CaptionText = styled.div`
   display: block;
   margin-bottom: 8px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 `
 
 export const User = styled.a`

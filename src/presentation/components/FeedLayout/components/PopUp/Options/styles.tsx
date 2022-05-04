@@ -6,7 +6,6 @@ export const Option = styled.button`
   padding: 4px 8px;
   min-height: 48px;
 
-  font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: var(--primary);

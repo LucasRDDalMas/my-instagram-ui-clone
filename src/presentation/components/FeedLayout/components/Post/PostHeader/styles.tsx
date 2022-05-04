@@ -66,8 +66,6 @@ const UserTextInfo = styled.a`
 export const Username = styled(UserTextInfo)`
   color: var(--primary);
   font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;  
 `
 
 export const Location = styled(UserTextInfo)`
@@ -92,7 +90,5 @@ export const OptionsWrapper = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 14px;
-    line-height: 18px;
   }
 `

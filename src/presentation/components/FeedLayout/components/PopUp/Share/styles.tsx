@@ -76,7 +76,6 @@ export const OptionText = styled.div`
   flex: 1 1 auto;
 
   color: var(--primary);
-  font-size: 14px;
   line-height: 18px;
   font-weight: 600;
 

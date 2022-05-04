@@ -8,8 +8,6 @@ export const TextArea = styled.textarea`
   width: 100%;
   padding: 1px;
   border: 1px solid var(--border);
-  font-size: 14px;
-  line-height: 17px;
   margin: 0 0 7px;
   min-height: 34px;
   resize: none;
@@ -36,7 +34,6 @@ export const CopyButton = styled.button`
   border: 1px solid transparent;
   border-radius: 4px;
   color: rgb(var(--white));
-  font-size: 14px;
   font-weight: 600;
 `
 

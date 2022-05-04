@@ -77,7 +77,6 @@ export const Search = styled(Flex)`
 `
 
 export const SearchInput = styled.input`
-  font-size: 14px;
   padding: 0 8px;
   width: 100%;
 `
