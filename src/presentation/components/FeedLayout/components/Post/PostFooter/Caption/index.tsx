@@ -7,30 +7,28 @@ const Caption: React.FC = () => {
   const [caption, setCaption] = useState<string>('')
   const [showMore, setShowMore] = useState<boolean>(true)
 
-  const captionText = postMock
-
-  const getSubCaption = (caption: string): string => {
-    return caption.substring(0, 120).trim().concat('... ')
+  const getSubCaption = (captionText: string): string => {
+    return captionText.substring(0, 120).trim().concat('... ')
   }
 
-  const collapseCaption = (caption: string): void => {
-    if (caption.indexOf('<br />') > 0) {
-      setCaption(getSubCaption(caption.split('<br />')[0]))
-    } else if (caption.length > 120) {
-      setCaption(getSubCaption(caption))
+  const collapseCaption = (captionText: string): void => {
+    if (captionText.indexOf('<br />') > 0) {
+      setCaption(getSubCaption(captionText.split('<br />')[0]))
+    } else if (captionText.length > 120) {
+      setCaption(getSubCaption(captionText))
     } else {
       setShowMore(false)
-      setCaption(caption)
+      setCaption(captionText)
     }
   }
 
   const showMoreCaption = (): void => {
     setShowMore(false)
-    setCaption(captionText)
+    setCaption(postMock)
   }
 
   useEffect(() => {
-    collapseCaption(captionText)
+    collapseCaption(postMock)
   }, [])
 
   return (

@@ -12,7 +12,7 @@ const Comment: React.FC = () => {
 
   const handleChangeComment = (event: React.ChangeEvent<HTMLTextAreaElement>): void => setComment(event.target.value)
 
-  const onEmojiClick = (event: React.MouseEvent<Element, MouseEvent>, data: IEmojiData): void => {
+  const onEmojiClick = (_event: React.MouseEvent<Element, MouseEvent>, data: IEmojiData): void => {
     setComment(comment.concat(data.emoji))
   }
 

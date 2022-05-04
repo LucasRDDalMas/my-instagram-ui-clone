@@ -55,7 +55,7 @@ const PostImage: React.FC = () => {
         </ImageWrapper>
       })}
       <ImageCarouselList>
-        {photos.map((photo, index) => {
+        {photos.map((_photo, index) => {
           return <ImageCarouselListItem
               key={index}
               className={index === current ? 'active' : ''}
