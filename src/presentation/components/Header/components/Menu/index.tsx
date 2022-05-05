@@ -8,19 +8,19 @@ import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
 
 const Menu: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const profileMenuRef = useRef<HTMLHeadingElement>(null)
+
   const setMenu = (): void => {
     setShowMenu(!showMenu)
   }
 
-  const profileMenuRef = useRef(null)
-  useOutsideAlerter(profileMenuRef, () => {
-    setShowMenu(false)
-  })
+  /* istanbul ignore next */
+  useOutsideAlerter(profileMenuRef, () => { setShowMenu(false) })
 
   return (
     <MenuWrapper>
       <IconContext.Provider value={{ size: '24px' }}>
-        {showMenu ? <IconOutlineHome /> : <IconHome />}
+        {showMenu ? <IconOutlineHome data-testid='icon-home-off' /> : <IconHome data-testid='icon-home-on' />}
         <IconPlusSquare />
         <IconHeart />
         <IconCompass />
@@ -28,9 +28,9 @@ const Menu: React.FC = () => {
       </IconContext.Provider>
 
       <ProfileImageWrapper ref={profileMenuRef}>
-        <ProfileImage onClick={setMenu} src="https://avatars.githubusercontent.com/u/15267415?s=40&v=4" />
+        <ProfileImage onClick={setMenu} data-testid='profile-button' src="https://avatars.githubusercontent.com/u/15267415?s=40&v=4" />
         {showMenu && (
-          <ProfileMenu>
+          <ProfileMenu data-testid='profile-menu'>
             <IconUp />
             <ProfileMenuLink>
               <IconProfile /> Profile
