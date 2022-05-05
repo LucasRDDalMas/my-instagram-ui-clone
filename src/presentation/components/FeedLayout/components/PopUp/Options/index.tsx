@@ -1,14 +1,14 @@
 import React from 'react'
 import { Option } from './styles'
 
-type Props = {
+interface IOptions {
   share: () => void
   embed: () => void
   unfollow: () => void
   report: () => void
 }
 
-const Options: React.FC<Props> = ({ share, embed, unfollow, report }: Props) => {
+const Options: React.FC<IOptions> = ({ share, embed, unfollow, report }: IOptions) => {
   return (
     <>
       <Option className='danger' onClick={() => report()}>

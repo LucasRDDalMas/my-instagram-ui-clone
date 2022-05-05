@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-type Props = {
+interface IRouter {
   Feed: React.FC
 }
 
-const Router: React.FC<Props> = ({ Feed }: Props) => {
+const Router: React.FC<IRouter> = ({ Feed }: IRouter) => {
   return (
     <BrowserRouter>
       <Routes>

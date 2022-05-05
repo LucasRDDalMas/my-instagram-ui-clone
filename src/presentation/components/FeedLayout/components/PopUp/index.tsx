@@ -7,12 +7,12 @@ import Share from './Share'
 import { PopUpWrapper, Wrapper } from './styles'
 import Unfollow from './Unfollow'
 
-type Props = {
+interface IModal {
   setShouldShow: Dispatch<SetStateAction<boolean>>
   shouldShow: boolean
 }
 
-const Modal: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
+const Modal: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => {
   const optionModalRef = useRef(null)
 
   const [showOptions, setShowOptions] = useState(true)

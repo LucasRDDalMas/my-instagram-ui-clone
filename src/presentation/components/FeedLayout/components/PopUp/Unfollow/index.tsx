@@ -2,11 +2,11 @@ import React from 'react'
 import { Option } from '../Options/styles'
 import { Image, Username, Wrapper } from './styles'
 
-type Props = {
+interface IUnfollow {
   close: () => void
 }
 
-const Unfollow: React.FC<Props> = ({ close }: Props) => {
+const Unfollow: React.FC<IUnfollow> = ({ close }: IUnfollow) => {
   return (
     <Wrapper>
       <Image>

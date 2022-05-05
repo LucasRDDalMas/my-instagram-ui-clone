@@ -3,12 +3,12 @@ import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
 import React, { Dispatch, SetStateAction, useRef } from 'react'
 import { CloseButton, CloseWrapper, FollowButton, FollowingButton, PopUpWrapper, Title, UserAvatar, UserInfo, UserInfoName, UserInfoUsername, UserList, UserWrapper, Wrapper } from './styles'
 
-type Props = {
+interface ILikeList {
   setShouldShow: Dispatch<SetStateAction<boolean>>
   shouldShow: boolean
 }
 
-const LikeList: React.FC<Props> = ({ shouldShow, setShouldShow }: Props) => {
+const LikeList: React.FC<ILikeList> = ({ shouldShow, setShouldShow }: ILikeList) => {
   const optionModalRef = useRef(null)
 
   const closeModel = (): void => {

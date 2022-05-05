@@ -2,11 +2,11 @@ import { IconClose, IconNext } from '@/presentation/assets/icons'
 import React from 'react'
 import { CloseButton, CloseWrapper, Icon, Option, OptionText, Header, Title } from './styles'
 
-type Props = {
+interface IReport {
   close: () => void
 }
 
-const Report: React.FC<Props> = ({ close }: Props) => {
+const Report: React.FC<IReport> = ({ close }: IReport) => {
   return (
     <>
       <Header>

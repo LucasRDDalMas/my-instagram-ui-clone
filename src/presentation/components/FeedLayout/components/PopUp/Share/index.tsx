@@ -2,11 +2,11 @@ import { IconClose, IconEmail, IconFacebook, IconLink, IconMessenger, IconSend, 
 import React from 'react'
 import { CloseButton, CloseWrapper, Icon, Option, OptionText, Title } from './styles'
 
-type Props = {
+interface IShare {
   close: () => void
 }
 
-const Share: React.FC<Props> = ({ close }: Props) => {
+const Share: React.FC<IShare> = ({ close }: IShare) => {
   return (
     <>
       <Title>

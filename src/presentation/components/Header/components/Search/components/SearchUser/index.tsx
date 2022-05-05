@@ -1,14 +1,14 @@
 import React from 'react'
 import { SearchUserWrapper, SearchUserAvatar, SearchUserInfo, SearchUserInfoName, SearchUserInfoUsername } from './styles'
 
-type Props = {
+interface ISearchUser {
   hasStory: boolean
   avatar: string
   username: string
   name: string
 }
 
-const SearchUser: React.FC<Props> = ({ hasStory, avatar, username, name }: Props) => {
+const SearchUser: React.FC<ISearchUser> = ({ hasStory, avatar, username, name }: ISearchUser) => {
   return (
     <SearchUserWrapper>
       <SearchUserAvatar>
