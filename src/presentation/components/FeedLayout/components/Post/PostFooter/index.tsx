@@ -1,13 +1,13 @@
 import React from 'react'
 import Caption from './Caption'
 import Comment from './Comment'
-import { postCaptionMock } from '@/presentation/mocks/mock-post'
+import { captionMock } from '@/presentation/mocks/mock-post'
 import { Comments, TimeAgo, Wrapper } from './styles'
 
 const PostFooter: React.FC = () => {
   return (
     <Wrapper>
-      <Caption caption={postCaptionMock} />
+      <Caption caption={captionMock.fullLine} />
       <Comments href=''>View all 39 comments</Comments>
       <TimeAgo href=''>5 HOURS AGO</TimeAgo>
       <Comment />

@@ -37,7 +37,7 @@ const Caption: React.FC<ICaption> = ({ caption }: ICaption) => {
     <>
       <CaptionWrapper>
         <CaptionText>
-          <User href="">avatar</User>&nbsp;<span dangerouslySetInnerHTML={{ __html: currentCaption }} />{showMore && <More onClick={showMoreCaption}>more</More>}
+          <User href="">avatar</User>&nbsp;<span data-testid='caption' dangerouslySetInnerHTML={{ __html: currentCaption }} />{showMore && <More onClick={showMoreCaption} data-testid='more-button'>more</More>}
         </CaptionText>
       </CaptionWrapper>
     </>
