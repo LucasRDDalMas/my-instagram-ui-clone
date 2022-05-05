@@ -29,5 +29,4 @@ describe('Header - Menu component', () => {
     expect(iconHomeOff).toBeTruthy()
     expect(iconHomeOn).toBeFalsy()
   })
-
 })

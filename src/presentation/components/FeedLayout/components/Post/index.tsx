@@ -1,3 +1,4 @@
+import { postPhotosMock } from '@/presentation/mocks/mock-post'
 import React from 'react'
 import PostFooter from './PostFooter'
 import PostHeader from './PostHeader'
@@ -10,7 +11,7 @@ const Post: React.FC = () => {
     <>
       <Wrapper>
         <PostHeader />
-        <PostImage />
+        <PostImage photos={postPhotosMock.ten} />
         <PostStatus />
         <PostFooter />
       </Wrapper>

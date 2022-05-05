@@ -1,10 +1,12 @@
-
-import { postMock } from '@/constants/mock-post'
 import React, { useEffect, useState } from 'react'
 import { CaptionText, CaptionWrapper, More, User } from './styles'
 
-const Caption: React.FC = () => {
-  const [caption, setCaption] = useState<string>('')
+interface ICaption {
+  caption: string
+}
+
+const Caption: React.FC<ICaption> = ({ caption }: ICaption) => {
+  const [currentCaption, setCurrentCaption] = useState<string>('')
   const [showMore, setShowMore] = useState<boolean>(true)
 
   const getSubCaption = (captionText: string): string => {
@@ -13,29 +15,29 @@ const Caption: React.FC = () => {
 
   const collapseCaption = (captionText: string): void => {
     if (captionText.indexOf('<br />') > 0) {
-      setCaption(getSubCaption(captionText.split('<br />')[0]))
+      setCurrentCaption(getSubCaption(captionText.split('<br />')[0]))
     } else if (captionText.length > 120) {
-      setCaption(getSubCaption(captionText))
+      setCurrentCaption(getSubCaption(captionText))
     } else {
       setShowMore(false)
-      setCaption(captionText)
+      setCurrentCaption(captionText)
     }
   }
 
   const showMoreCaption = (): void => {
     setShowMore(false)
-    setCaption(postMock)
+    setCurrentCaption(caption)
   }
 
   useEffect(() => {
-    collapseCaption(postMock)
+    collapseCaption(caption)
   }, [])
 
   return (
     <>
       <CaptionWrapper>
         <CaptionText>
-          <User href="">avatar</User>&nbsp;<span dangerouslySetInnerHTML={{ __html: caption }} />{showMore && <More onClick={showMoreCaption}>more</More>}
+          <User href="">avatar</User>&nbsp;<span dangerouslySetInnerHTML={{ __html: currentCaption }} />{showMore && <More onClick={showMoreCaption}>more</More>}
         </CaptionText>
       </CaptionWrapper>
     </>

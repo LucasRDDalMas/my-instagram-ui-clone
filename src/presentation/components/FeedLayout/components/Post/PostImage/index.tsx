@@ -3,17 +3,12 @@ import { LeftIcon, RightIcon } from '@/presentation/components/shared/styles'
 import React, { useState } from 'react'
 import { Image, ImageCarouselList, ImageCarouselListItem, ImageWrapper, Wrapper } from './styles'
 
-const PostImage: React.FC = () => {
-  const [current, setCurrent] = useState(0)
-  const photos = [];
+type Type = {
+  photos?: string[]
+}
 
-  [...Array(10)].forEach((_x, i) =>
-    photos.push(
-      <Image key={i}>
-        <img src='https://picsum.photos/500' alt='' />
-      </Image>
-    )
-  )
+const PostImage: React.FC<Type> = ({ photos }: Type) => {
+  const [current, setCurrent] = useState(0)
 
   if (!Array.isArray(photos) || photos.length <= 0) {
     return null
@@ -22,26 +17,19 @@ const PostImage: React.FC = () => {
   const length = photos.length - 1
 
   const slide = (shift: number): void => {
-    setCurrent(checkFirstLast(current + shift))
-  }
-
-  const checkFirstLast = (position: number): number => {
-    if (position > length) return length
-    if (position < 0) return 0
-
-    return position
+    setCurrent(current + shift)
   }
 
   return (
     <Wrapper>
       {current !== 0 && (
-        <LeftIcon onClick={() => slide(-1)}>
+        <LeftIcon onClick={() => slide(-1)} data-testid='left-button' >
           <IconLeftArrow size='24' />
         </LeftIcon>
       )}
 
       {current !== length && (
-        <RightIcon onClick={() => slide(1)}>
+        <RightIcon onClick={() => slide(1)} data-testid='right-button'>
           <IconRightArrow size='24' />
         </RightIcon>
       )}
@@ -50,11 +38,16 @@ const PostImage: React.FC = () => {
         return <ImageWrapper
           key={index}
           className={index === current ? 'slide active' : 'slide'}
+          data-testid='photos'
         >
-         {index === current && photo}
+          {index === current && (
+            <Image key={index}>
+              <img src={photo} alt='' />
+            </Image>
+          )}
         </ImageWrapper>
       })}
-      <ImageCarouselList>
+      <ImageCarouselList data-testid='image-carousel-icon'>
         {photos.map((_photo, index) => {
           return <ImageCarouselListItem
               key={index}
