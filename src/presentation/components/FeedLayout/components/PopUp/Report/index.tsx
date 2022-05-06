@@ -11,7 +11,7 @@ const Report: React.FC<IReport> = ({ close }: IReport) => {
     <>
       <Header>
         Report
-        <CloseWrapper onClick={() => close()}>
+        <CloseWrapper data-testid='report-close' onClick={() => close()}>
           <CloseButton>
             <IconClose size='24' />
           </CloseButton>
@@ -37,7 +37,7 @@ const Report: React.FC<IReport> = ({ close }: IReport) => {
         </Icon>
       </Option>
 
-      <Option onClick={() => close()}>
+      <Option data-testid='report-cancel' onClick={() => close()}>
         <OptionText>
           Cancel
         </OptionText>

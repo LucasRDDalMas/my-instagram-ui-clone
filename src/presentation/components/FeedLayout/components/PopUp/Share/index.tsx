@@ -11,7 +11,7 @@ const Share: React.FC<IShare> = ({ close }: IShare) => {
     <>
       <Title>
         Share To...
-        <CloseWrapper onClick={() => close()}>
+        <CloseWrapper data-testid='share-close' onClick={() => close()}>
           <CloseButton>
             <IconClose size='24' />
           </CloseButton>
@@ -65,7 +65,7 @@ const Share: React.FC<IShare> = ({ close }: IShare) => {
           Copy Link
         </OptionText>
       </Option>
-      <Option onClick={() => close()}>
+      <Option data-testid='share-cancel' onClick={() => close()}>
         <Icon />
         <OptionText>
           Cancel
