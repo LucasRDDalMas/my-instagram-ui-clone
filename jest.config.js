@@ -10,7 +10,8 @@ module.exports = {
     '!**/*.d.ts',
     '!**/constants/**',
     '!./tests/**',
-    '!Router/index.tsx'
+    '!**/Router/index.tsx',
+    '!**/outside-alerter.tsx'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',

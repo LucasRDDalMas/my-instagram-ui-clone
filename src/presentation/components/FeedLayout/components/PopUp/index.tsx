@@ -35,7 +35,7 @@ const Modal: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => {
   useOutsideAlerter(optionModalRef, closeModel)
 
   return (
-    <Wrapper className={shouldShow ? 'show' : ''}>
+    <Wrapper data-testid='modal' className={shouldShow ? 'show' : ''}>
       <PopUpWrapper ref={optionModalRef}>
         {showOptions && (
           <Options
@@ -55,6 +55,7 @@ const Modal: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => {
               setShowOptions(false)
               setShowReport(true)
             }}
+            close={closeModel}
           />
         )}
         {showShare && <Share close={closeModel} />}

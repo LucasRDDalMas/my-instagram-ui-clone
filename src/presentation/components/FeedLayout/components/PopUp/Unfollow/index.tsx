@@ -20,7 +20,7 @@ const Unfollow: React.FC<IUnfollow> = ({ close }: IUnfollow) => {
       <Option className='danger'>
         Unfollow
       </Option>
-      <Option onClick={() => close()}>
+      <Option data-testid='unfollow-cancel' onClick={() => close()}>
         Cancel
       </Option>
     </Wrapper>

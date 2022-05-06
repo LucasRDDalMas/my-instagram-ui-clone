@@ -20,9 +20,12 @@ const PostHeader: React.FC = () => {
           </HeaderUserInfo>
         </Header>
 
-        <OptionsWrapper onClick={() => {
-          setShowOptionsPopupMenu(true)
-        }}>
+        <OptionsWrapper
+          onClick={() => {
+            setShowOptionsPopupMenu(true)
+          }}
+          data-testid='post-header-open-button'
+        >
           <button>
             <IconMenuDots size='24' color='#262626' />
           </button>

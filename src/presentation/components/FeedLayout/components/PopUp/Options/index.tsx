@@ -6,15 +6,16 @@ interface IOptions {
   embed: () => void
   unfollow: () => void
   report: () => void
+  close: () => void
 }
 
-const Options: React.FC<IOptions> = ({ share, embed, unfollow, report }: IOptions) => {
+const Options: React.FC<IOptions> = ({ share, embed, unfollow, report, close }: IOptions) => {
   return (
     <>
-      <Option className='danger' onClick={() => report()}>
+      <Option data-testid='options-report' className='danger' onClick={() => report()}>
         Report
       </Option>
-      <Option className='danger' onClick={() => unfollow()}>
+      <Option data-testid='options-unfollow' className='danger' onClick={() => unfollow()}>
         Unfollow
       </Option>
       <Option>
@@ -23,16 +24,16 @@ const Options: React.FC<IOptions> = ({ share, embed, unfollow, report }: IOption
       <Option>
         Tagged Accounts
       </Option>
-      <Option onClick={() => share()}>
+      <Option data-testid='options-share' onClick={() => share()}>
         Share to...
       </Option>
       <Option>
         Copy Link
       </Option>
-      <Option onClick={() => embed()}>
+      <Option data-testid='options-embed' onClick={() => embed()}>
         Embed
       </Option>
-      <Option>
+      <Option data-testid='options-close' onClick={() => close()}>
         Cancel
       </Option>
     </>
