@@ -15,14 +15,15 @@ const LikeList: React.FC<ILikeList> = ({ shouldShow, setShouldShow }: ILikeList)
     setShouldShow(false)
   }
 
+  /* istanbul ignore next */
   useOutsideAlerter(optionModalRef, closeModel)
 
   return (
-    <Wrapper className={shouldShow ? 'show' : ''}>
+    <Wrapper className={shouldShow ? 'show' : ''} data-testid='like-list-wrapper'>
       <PopUpWrapper ref={optionModalRef}>
         <Title>
           Likes
-          <CloseWrapper onClick={() => closeModel()}>
+          <CloseWrapper onClick={() => closeModel()} data-testid='like-list-close-button'>
             <CloseButton>
               <IconClose size='24' />
             </CloseButton>
