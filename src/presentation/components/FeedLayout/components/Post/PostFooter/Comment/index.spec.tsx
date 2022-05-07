@@ -7,10 +7,6 @@ const renderComponent = (): void => {
 }
 
 describe('Comment component', () => {
-  afterEach(() => {
-    jest.clearAllMocks()
-  })
-
   test('should disable post button if comment do not have value', () => {
     renderComponent()
     const commentSubmit = screen.getByTestId('comment-submit')

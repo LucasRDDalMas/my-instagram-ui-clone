@@ -27,7 +27,7 @@ const PostStatus: React.FC = () => {
         </ButtonIcon>
       </Wrapper >
       <Likes>
-        <LikesLink onClick={() => setShowLikes(true)}>
+        <LikesLink data-testid='post-status-likes' onClick={() => setShowLikes(true)}>
           2,678 likes
         </LikesLink>
       </Likes>
