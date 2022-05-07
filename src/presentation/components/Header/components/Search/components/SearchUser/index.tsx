@@ -11,13 +11,12 @@ interface ISearchUser {
 const SearchUser: React.FC<ISearchUser> = ({ hasStory, avatar, username, name }: ISearchUser) => {
   return (
     <SearchUserWrapper>
-      <SearchUserAvatar>
-        {hasStory && <canvas height="54" width="54" />}
+      <SearchUserAvatar data-testid='search-user-avatar' hasStory={hasStory}>
         <img src={avatar} alt={username} />
       </SearchUserAvatar>
       <SearchUserInfo>
-        <SearchUserInfoUsername>{username}</SearchUserInfoUsername>
-        <SearchUserInfoName>{name}</SearchUserInfoName>
+        <SearchUserInfoUsername data-testid='search-user-username'>{username}</SearchUserInfoUsername>
+        <SearchUserInfoName data-testid='search-user-name'>{name}</SearchUserInfoName>
       </SearchUserInfo>
     </SearchUserWrapper>
   )

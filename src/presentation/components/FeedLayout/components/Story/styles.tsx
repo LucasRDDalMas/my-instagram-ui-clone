@@ -31,8 +31,9 @@ export const UserAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   &.story {
-    background: var(--story);
+    background-color: var(--story);
   }
 
   img {

@@ -37,13 +37,13 @@ const Story: React.FC = () => {
   return (
     <Wrapper>
       { scrollStart && (
-        <LeftIcon onClick={() => slide(-300)}>
+        <LeftIcon data-testid='left-icon' onClick={() => slide(-300)}>
           <IconLeftArrow size='24' />
         </LeftIcon>
       ) }
 
       { scrollEnd && (
-        <RightIcon onClick={() => slide(300)}>
+        <RightIcon data-testid='right-icon' onClick={() => slide(300)}>
           <IconRightArrow size='24' />
         </RightIcon>
       ) }
