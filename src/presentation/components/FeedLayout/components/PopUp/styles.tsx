@@ -2,7 +2,7 @@ import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
+  z-index: 3;
   transition: visibility 0.4s ease-in, opacity 0.4s ease-in;
 
   &.show {

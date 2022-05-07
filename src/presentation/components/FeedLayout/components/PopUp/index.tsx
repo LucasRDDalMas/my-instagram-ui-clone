@@ -1,5 +1,5 @@
 import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
-import React, { Dispatch, SetStateAction, useRef, useState } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 import Embed from './Embed'
 import Options from './Options'
 import Report from './Report'
@@ -33,6 +33,14 @@ const Modal: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => {
   }
 
   useOutsideAlerter(optionModalRef, closeModel)
+
+  useEffect(() => {
+    if (shouldShow) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [shouldShow])
 
   return (
     <Wrapper data-testid='modal' className={shouldShow ? 'show' : ''}>

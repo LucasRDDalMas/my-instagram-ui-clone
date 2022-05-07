@@ -22,6 +22,10 @@ html, body, #root {
   color: var(--primary);
 }
 
+body {
+  position: relative;
+}
+
 html {
   background: var(--background-main);
 }
