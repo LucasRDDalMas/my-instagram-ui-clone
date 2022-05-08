@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   padding: 0 16px;
   margin-top: 16px;
   display: flex;
-  text-align: center;
+  align-items: center;
 `
 
 export const Avatar = styled.a`
