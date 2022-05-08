@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   grid-template-areas: "main sidebar";
   grid-template-columns: 470px;
 
-  grid-gap: 32px;
+  grid-gap: 16px;
 
   max-width: 821px;
   margin: 0 auto;
