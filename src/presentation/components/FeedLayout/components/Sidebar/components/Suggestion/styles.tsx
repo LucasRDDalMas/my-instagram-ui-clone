@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-bottom: 12px;
 `
 
 export const TitleWrapper = styled.div`

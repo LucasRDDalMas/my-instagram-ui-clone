@@ -10,7 +10,7 @@ import {
 } from '@/presentation/components/shared/styles'
 import { Title, TitleWrapper, Wrapper } from './styles'
 
-const SuggestionList: React.FC = () => {
+const Suggestion: React.FC = () => {
   return (
     <Wrapper>
       <TitleWrapper>
@@ -33,4 +33,4 @@ const SuggestionList: React.FC = () => {
   )
 }
 
-export default SuggestionList
+export default Suggestion

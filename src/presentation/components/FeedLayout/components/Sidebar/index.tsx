@@ -1,15 +1,17 @@
 import React from 'react'
-import SuggestionList from './components/SuggestionList'
+import Suggestion from './components/Suggestion'
 import SwitchAccount from './components/SwitchAccount'
+import Footer from './components/Footer'
 import { Wrapper } from './styles'
 
-const Suggestion: React.FC = () => {
+const Sidebar: React.FC = () => {
   return (
     <Wrapper>
       <SwitchAccount />
-      <SuggestionList />
+      <Suggestion />
+      <Footer />
     </Wrapper>
   )
 }
 
-export default Suggestion
+export default Sidebar

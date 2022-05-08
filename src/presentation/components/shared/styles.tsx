@@ -127,3 +127,12 @@ export const FollowingButton = styled(Button)`
 export const SeeAllLink = styled(Link)`
   color: var(--primary)!important;
 `
+
+export const NoSelect = styled.div`
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`
