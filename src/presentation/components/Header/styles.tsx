@@ -34,6 +34,7 @@ export const Nav = styled(Flex)`
   width: 90%;
   height: 100%;
   max-width: 975px;
+  padding: 0 20px;
   flex-direction: row;
   justify-content: space-between;
   height: var(--mobile-nav-height);

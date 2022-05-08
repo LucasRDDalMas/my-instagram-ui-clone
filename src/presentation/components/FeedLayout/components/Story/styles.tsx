@@ -21,24 +21,31 @@ export const Scroll = styled.div`
 `
 
 export const UserStory = styled.div`
+  width: 66px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `
 
 export const UserAvatar = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
+  margin-top: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &.story {
-    background-color: var(--story);
+    background: var(--story);
+
   }
 
   img {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
     border: 2px solid var(--background);
   }

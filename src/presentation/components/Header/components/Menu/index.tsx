@@ -19,12 +19,12 @@ const Menu: React.FC = () => {
 
   return (
     <MenuWrapper>
-      <IconContext.Provider value={{ size: '24px' }}>
+      <IconContext.Provider value={{ size: '27px' }}>
         {showMenu ? <IconOutlineHome data-testid='icon-home-off' /> : <IconHome data-testid='icon-home-on' />}
-        <IconPlusSquare />
-        <IconHeart />
-        <IconCompass />
         <IconMessenger />
+        <IconPlusSquare />
+        <IconCompass />
+        <IconHeart />
       </IconContext.Provider>
 
       <ProfileImageWrapper ref={profileMenuRef}>

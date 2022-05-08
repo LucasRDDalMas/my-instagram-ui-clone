@@ -11,6 +11,10 @@ export const NavDesktopWrapper = styled(Nav)`
 
 export const MenuWrapper = styled(Flex)`
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1 0 127px;
   align-items: center;
   gap: 22px;
   padding-left: 16px;
