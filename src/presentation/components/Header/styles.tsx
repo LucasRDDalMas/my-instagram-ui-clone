@@ -1,9 +1,6 @@
 import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
 
-const headerHeight = '44px'
-const headerDesktopHeight = '60px'
-
 export const Flex = styled.div`
   display: flex;
   align-items: center;
@@ -12,8 +9,8 @@ export const Flex = styled.div`
 `
 
 export const NavHack = styled.div`
-  height: ${headerHeight};
-  ${device.md`height: ${headerDesktopHeight};`};
+  height: var(--mobile-nav-height);
+  ${device.md`height: var(--desktop-nav-height);`};
 `
 
 export const NavWrapper = styled(Flex)`
@@ -39,8 +36,8 @@ export const Nav = styled(Flex)`
   max-width: 975px;
   flex-direction: row;
   justify-content: space-between;
-  height: ${headerHeight};
-  ${device.md`height: ${headerDesktopHeight};`};
+  height: var(--mobile-nav-height);
+  ${device.md`height: var(--desktop-nav-height);`};
 `
 
 export const NavMobileWrapper = styled(Nav)`

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   display: grid;
   grid-template-areas: "main sidebar";
-  grid-template-columns: 470px 319px;
+  grid-template-columns: 470px;
 
   grid-gap: 32px;
 
@@ -15,6 +15,6 @@ export const MainBox = styled.div`
   grid-area: "main";
 `
 
-export const Suggestion = styled.div`
+export const SuggestionBox = styled.div`
   grid-area: "sidebar";
 `
