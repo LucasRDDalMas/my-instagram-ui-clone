@@ -6,3 +6,4 @@ public
 *.scss
 dist
 *.svg
+**/assets
