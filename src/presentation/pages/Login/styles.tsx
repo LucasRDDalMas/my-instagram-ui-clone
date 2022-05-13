@@ -13,26 +13,26 @@ export const Main = styled.article`
   padding-bottom: 32px;
   width: 100%;
   flex-grow: 1;
+
+  height: 582px;
   flex-direction: row;
 `
 
 export const MainImage = styled.div`
   display: flex;
   flex-basis: 380px;
-  height: 582px;
-  margin-bottom: 12px;
+  height: 100%;
   margin-right: 32px;
   background-color: blue;
 
   img {
-    height: 468px;
+    height: 100%;
   }
 `
 
 export const MainLoginForm = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 12px;
   max-width: 350px;
   flex-grow: 1;
   background-color: red;
