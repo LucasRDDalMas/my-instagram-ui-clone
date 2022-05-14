@@ -2,12 +2,12 @@ import '@/presentation/styles/global.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@/presentation/components'
-import { Feed, Login } from '@/presentation/pages'
+import { Feed, SignIn } from '@/presentation/pages'
 
 ReactDOM.render(
     <Router
       Feed={Feed}
-      Login={Login}
+      SignIn={SignIn}
     />,
     document.getElementById('main')
 )

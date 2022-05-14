@@ -4,7 +4,7 @@ import LoginImage from '@/presentation/assets/images/login.png'
 import Loginlayout from '@/presentation/components/LoginLayout'
 import Footer from '@/presentation/components/LoginLayout/components/Footer'
 
-const Login: React.FC = () => {
+const SignIn: React.FC = () => {
   return (
     <>
       <MainWrapper>
@@ -22,4 +22,4 @@ const Login: React.FC = () => {
   )
 }
 
-export default Login
+export default SignIn
