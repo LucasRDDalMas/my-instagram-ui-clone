@@ -14,7 +14,6 @@ export const Main = styled.article`
   width: 100%;
   flex-grow: 1;
 
-  height: 582px;
   justify-content: center;
   flex-direction: row;
 `
@@ -27,7 +26,9 @@ export const MainImage = styled.div`
   justify-content: center;
 
   img {
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
   }
 `
 
@@ -64,13 +65,6 @@ export const LoginForm = styled.form`
   display: flex;
   flex-direction: column;
   padding-top: 24px;
-`
-
-export const LoginFormInput = styled.input`
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  padding: 9px 0 7px 8px;
-  margin-bottom: 6px;
 `
 
 export const LoginFormButton = styled.button`
