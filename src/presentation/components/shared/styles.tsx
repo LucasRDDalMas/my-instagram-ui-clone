@@ -136,3 +136,30 @@ export const NoSelect = styled.div`
   -ms-user-select: none;
   user-select: none;
 `
+
+export const Divider = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 10px 0 18px;
+  
+  &::after,
+  &::before {
+    content: "";
+    border-top: 1px solid var(--border);
+    flex: 1;
+  }
+
+  &:not(:empty)::before {
+    margin-right: 0.45em;
+  }
+
+  &:not(:empty)::after {
+    margin-left: 0.45em;
+  }
+`
