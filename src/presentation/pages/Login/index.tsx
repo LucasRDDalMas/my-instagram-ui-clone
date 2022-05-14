@@ -1,19 +1,10 @@
-import React, { useState } from 'react'
-import { Apps, AppsLinks, Footer, ForgotPassword, LoginForm, LoginFormButton, LoginLogo, LoginSocial, LoginWrapper, Main, MainImage, MainLoginWrapper, MainWrapper, SignUpWrapper } from './styles'
-import LoginImage from '../../assets/images/login.png'
-import GooglePlay from '../../assets/images/google-play.png'
-import AppStore from '../../assets/images/app-store.png'
-import { MainLogo } from '@/presentation/assets/logos'
-import { Divider } from '@/presentation/components/shared/styles'
-import { IconFacebook } from '@/presentation/assets/icons'
-import FloatInput from '@/presentation/components/shared/FloatInput'
+import React from 'react'
+import { CopyRight, Footer, Language, LanguageSelect, Link, Links, Main, MainImage, MainLoginWrapper, MainWrapper } from './styles'
+import LoginImage from '@/presentation/assets/images/login.png'
+import Loginlayout from '@/presentation/components/LoginLayout'
+import { IconDown } from '@/presentation/assets/icons'
 
 const Login: React.FC = () => {
-  const [state, setState] = useState({
-    username: '',
-    password: ''
-  })
-
   return (
     <>
       <MainWrapper>
@@ -22,45 +13,43 @@ const Login: React.FC = () => {
             <img src={LoginImage} alt='' />
           </MainImage>
           <MainLoginWrapper>
-            <LoginWrapper>
-              <LoginLogo>
-                <img src={MainLogo} alt='' />
-              </LoginLogo>
-              <LoginForm>
-                <FloatInput state={state} setState={setState} type='text' name='username' placeholder='Phone number, username, or email' aria-required="true" maxLength={75} />
-                <FloatInput state={state} setState={setState} type='password' name='password' placeholder='Password' aria-required="true" />
-                <LoginFormButton>Log In</LoginFormButton>
-              </LoginForm>
-
-              <Divider>Or</Divider>
-
-              <LoginSocial>
-                <IconFacebook size='24' color='#385184' />
-                <span>Log in with Facebook</span>
-              </LoginSocial>
-
-              <ForgotPassword>
-                Forgot password?
-              </ForgotPassword>
-            </LoginWrapper>
-            <SignUpWrapper>
-              Don&apos;t have an account?&nbsp;<a href=''>Sign up</a>
-            </SignUpWrapper>
-            <Apps>
-              <p>Get the app.</p>
-              <AppsLinks>
-                <a href=''>
-                  <img src={GooglePlay} alt='' />
-                </a>
-                <a href=''>
-                  <img src={AppStore} alt='' />
-                </a>
-              </AppsLinks>
-            </Apps>
+            <Loginlayout />
           </MainLoginWrapper>
         </Main>
       </MainWrapper>
-      <Footer></Footer>
+      <Footer>
+        <Links>
+          <Link href=''>Meta</Link>
+          <Link href=''>About</Link>
+          <Link href=''>Blog</Link>
+          <Link href=''>Jobs</Link>
+          <Link href=''>Help</Link>
+          <Link href=''>API</Link>
+          <Link href=''>Privacy</Link>
+          <Link href=''>Terms</Link>
+          <Link href=''>Top Accounts</Link>
+          <Link href=''>Hashtags</Link>
+          <Link href=''>Locations</Link>
+          <Link href=''>Instagram Lite</Link>
+        </Links>
+        <Links>
+          <Link href=''>Dance</Link>
+          <Link href=''>Food & Drink</Link>
+          <Link href=''>Home & Garden</Link>
+          <Link href=''>Music</Link>
+          <Link href=''>Visual Arts</Link>
+        </Links>
+        <CopyRight>
+          <Language>
+            English<IconDown size='16' />
+            <LanguageSelect aria-label="Switch Display Language">
+              <option value="en">English</option>
+              <option value="pt-br">Português (Brasil)</option>
+            </LanguageSelect>
+          </Language>
+          <span>© 2022 Instagram from Meta</span>
+        </CopyRight>
+      </Footer>
     </>
   )
 }

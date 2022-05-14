@@ -20,14 +20,13 @@ export const Main = styled.article`
 
 export const MainImage = styled.div`
   display: flex;
-  flex-basis: 380px;
   height: 100%;
   margin-right: 32px;
   justify-content: center;
+  height: 581px;
 
   img {
     max-height: 100%;
-    max-width: 100%;
     object-fit: contain;
   }
 `
@@ -40,110 +39,61 @@ export const MainLoginWrapper = styled.div`
   height: 100%;
   flex-grow: 1;
   gap: 10px;
-`
-
-export const LoginWrapper = styled.div`
-  border: 1px solid var(--border);
-  background-color: var(--background);
-  padding: 10px 40px;
-`
-
-export const LoginLogo = styled.div`
-  display: flex;
-  flex: 0 0 auto;
-  margin: 36px 0 12px;
-  height: 56px;
-
-  img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-  }
-`
-
-export const LoginForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  padding-top: 24px;
-`
-
-export const LoginFormButton = styled.button`
-  display: flex;
-  flex: 0 0 auto;
-  background-color: var(--quartary);
-  color: rgb(var(--white));
-  margin: 8px 0;
-  font-weight: 600;
-  padding: 5px 9px;
-  justify-content: center;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  font-size: 14px;
-`
-
-export const LoginSocial = styled.button`
-  display: flex;
-  width: 100%;
-  margin: 8px 0;
-  color: #385185;
-  margin: 8px 0;
-  font-weight: 600;
-  padding: 5px 9px;
-  justify-content: center;
-  align-items: center;
-
-  span {
-    margin-left: 8px;
-    font-weight: 600;
-    font-size: 14px;
-  }
-`
-
-export const ForgotPassword = styled.a`
-  color: #00376b;;
-  font-size: 12px;
-  line-height: 16px;
   margin-top: 12px;
-  text-align: center;
-  display: block;
-  width: 100%;
-`
-
-export const SignUpWrapper = styled.div`
-  border: 1px solid var(--border);
-  background-color: var(--background);
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 25px 0;
-  border-radius: 1px;
-
-  a {
-    font-weight: 600;
-  }
-`
-
-export const Apps = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  p {
-    margin: 10px 20px 10px 20px;
-  }
-`
-
-export const AppsLinks = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: 10px 0;
-  gap: 10px;
-
-  img {
-    height: 40px;
-  }
 `
 
 export const Footer = styled.footer`
+  padding: 24px 20px 52px;
+  display: flex;
+  flex-direction: column;
+`
+
+export const Links = styled.div`
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
+
+export const Link = styled.a`
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--secondary)!important;
+  display: inline;
+  margin: 0 8px 12px;
+  white-space: nowrap;
+`
+
+export const CopyRight = styled.div`
+  margin: 12px 0;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+
+  span {
+    margin-left: 16px;
+    color: var(--secondary);
+  }
+`
+
+export const Language = styled.div`
+  position: relative;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+`
+
+export const LanguageSelect = styled.select`
+  cursor: pointer;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
 `
