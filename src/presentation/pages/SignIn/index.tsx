@@ -1,7 +1,7 @@
 import React from 'react'
 import { Main, MainImage, MainLoginWrapper, MainWrapper } from './styles'
 import LoginImage from '@/presentation/assets/images/login.png'
-import Loginlayout from '@/presentation/components/LoginLayout'
+import LoginLayout from '@/presentation/components/LoginLayout'
 import Footer from '@/presentation/components/LoginLayout/components/Footer'
 
 const SignIn: React.FC = () => {
@@ -13,7 +13,7 @@ const SignIn: React.FC = () => {
             <img src={LoginImage} alt='' />
           </MainImage>
           <MainLoginWrapper>
-            <Loginlayout />
+            <LoginLayout />
           </MainLoginWrapper>
         </Main>
       </MainWrapper>

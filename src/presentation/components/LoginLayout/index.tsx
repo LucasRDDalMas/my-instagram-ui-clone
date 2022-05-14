@@ -3,9 +3,10 @@ import { ForgotPassword, LoginLogo, LoginSocial, LoginWrapper } from './styles'
 import { MainLogo } from '@/presentation/assets/logos'
 import { Divider } from '@/presentation/components/shared/styles'
 import { IconFacebook } from '@/presentation/assets/icons'
-import { LoginForm, SignUp, Apps } from './components/'
+import { LoginForm, SignUp } from './components/'
+import Apps from '@/presentation/components/shared/Apps'
 
-const Loginlayout: React.FC = () => {
+const LoginLayout: React.FC = () => {
   return (
     <>
       <LoginWrapper>
@@ -33,4 +34,4 @@ const Loginlayout: React.FC = () => {
   )
 }
 
-export default Loginlayout
+export default LoginLayout

@@ -45,6 +45,6 @@ export const Label = styled.label`
   opacity: 1;
   transform: translateY(-2.65em) translateX(+10px);
   transform-origin: 0 0;
-  transition: all 0.2s;
+  transition: all 0.3s;
   font-size: 12px;
 `
