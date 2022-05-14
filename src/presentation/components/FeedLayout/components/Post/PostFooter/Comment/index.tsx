@@ -1,4 +1,3 @@
-
 import { IconHappyFace } from '@/presentation/assets/icons'
 import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
 import EmojiPicker, { IEmojiData } from 'emoji-picker-react'
