@@ -9,8 +9,9 @@ export const Wrapper = styled.div`
   padding: 5px 12px;
 `
 
-export const EmojiButton = styled.button`
+export const EmojiButton = styled.div`
   padding: 8px 12px 8px 0;
+  cursor: pointer;
   position: relative;
   svg {
     path {

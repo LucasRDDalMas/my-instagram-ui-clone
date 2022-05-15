@@ -9,7 +9,7 @@ const IconBase = styled.div`
   top: 50%;
   justify-self: center;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
   display: flex;
   align-items: center;

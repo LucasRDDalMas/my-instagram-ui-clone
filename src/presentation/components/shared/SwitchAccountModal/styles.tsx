@@ -17,7 +17,7 @@ export const Wrapper = styled.div<IWrapper>`
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  z-index: 3;
+  z-index: 4;
   transition: visibility 0.4s ease-in, opacity 0.4s ease-out;
 
   ${(props: IWrapper) => {

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Flex } from '@/presentation/components/Header/styles'
+import { device } from '@/presentation/utils/media-query'
 
 export const SearchWrapper = styled(Flex)`
   background: var(--background-main);
@@ -7,9 +8,12 @@ export const SearchWrapper = styled(Flex)`
   padding: 3px 16px;
   border: 1px solid var(--border);
   height: 36px;
+  width: 100%;
   min-width: 125px;
-  width: 268px;
   position: relative;
+
+  ${device.md`max-width: 200px;`}
+  ${device.lg`max-width: 268px;`}
 
   .hide {
     display: none;

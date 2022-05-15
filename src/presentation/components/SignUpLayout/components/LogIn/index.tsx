@@ -4,7 +4,7 @@ import { SignUpWrapper } from './styles'
 const LogIn: React.FC = () => {
   return (
     <SignUpWrapper>
-      Have an account?&nbsp;<a href=''>Log in</a>
+      Have an account?&nbsp;<a href='login'>Log in</a>
     </SignUpWrapper>
   )
 }

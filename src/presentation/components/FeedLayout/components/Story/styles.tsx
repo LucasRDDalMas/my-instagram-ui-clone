@@ -1,13 +1,18 @@
+import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: relative;
   scroll-behavior: smooth;
   overflow: hidden;
-  background-color: var(--background);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin: 16px 0;
+
+  ${device.md`
+    margin: 16px 0;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 16px 0;
+  `}
 `
 
 export const Scroll = styled.div`
@@ -40,7 +45,6 @@ export const UserAvatar = styled.div`
 
   &.story {
     background: var(--story);
-
   }
 
   img {

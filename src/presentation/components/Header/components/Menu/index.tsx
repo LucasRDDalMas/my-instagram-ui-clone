@@ -5,9 +5,12 @@ import { IconContext } from 'react-icons/lib'
 import { IconUp, MenuWrapper, ProfileImage, ProfileImageWrapper, ProfileMenu, ProfileMenuLink } from './styles'
 import { IconBookmark, IconCompass, IconGearWide, IconHeart, IconHome, IconMessenger, IconOutlineHome, IconPlusSquare, IconProfile, IconSwitch } from '@/presentation/assets/icons'
 import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
+import { Divider } from '@/presentation/components/shared/styles'
+import ImageUpload from '@/presentation/components/ImageUpload'
 
 const Menu: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const [showImageUpload, setShowImageUpload] = useState(false)
   const profileMenuRef = useRef<HTMLHeadingElement>(null)
 
   const setMenu = (): void => {
@@ -22,7 +25,7 @@ const Menu: React.FC = () => {
       <IconContext.Provider value={{ size: '27px' }}>
         {showMenu ? <IconOutlineHome data-testid='icon-home-off' /> : <IconHome data-testid='icon-home-on' />}
         <IconMessenger />
-        <IconPlusSquare />
+        <IconPlusSquare onClick={() => setShowImageUpload(true)} />
         <IconCompass />
         <IconHeart />
       </IconContext.Provider>
@@ -44,11 +47,12 @@ const Menu: React.FC = () => {
             <ProfileMenuLink>
               <IconSwitch /> Switch Accounts
             </ProfileMenuLink>
-            <hr />
+            <Divider />
             <ProfileMenuLink>Log Out</ProfileMenuLink>
           </ProfileMenu>
         )}
       </ProfileImageWrapper>
+      <ImageUpload setShouldShow={setShowImageUpload} shouldShow={showImageUpload} />
     </MenuWrapper>
   )
 }
