@@ -16,7 +16,8 @@ export const MenuWrapper = styled(Flex)`
   justify-content: flex-end;
   flex: 1 0 127px;
   align-items: center;
-  gap: 22px;
+  justify-content: center;
+  gap: 11px;
   padding-left: 16px;
   white-space: nowrap;
 
@@ -27,6 +28,7 @@ export const MenuWrapper = styled(Flex)`
 
 export const ProfileImageWrapper = styled.div`
   position: relative;
+  display: flex;
 
   .show {
     opacity: 1;
