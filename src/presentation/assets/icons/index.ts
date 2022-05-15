@@ -5,6 +5,7 @@ import { MdOutlineExplore, MdVerified } from 'react-icons/md'
 import { RiMessengerLine, RiCloseFill } from 'react-icons/ri'
 import { CgProfile } from 'react-icons/cg'
 import { GrPowerCycle, GrSend } from 'react-icons/gr'
+import { IoImagesOutline } from 'react-icons/io5'
 
 export {
   AiFillHome as IconHome,
@@ -32,5 +33,6 @@ export {
   FiMessageSquare as IconComment,
   AiOutlineSmile as IconHappyFace,
   MdVerified as IconVerified,
-  FiChevronDown as IconDown
+  FiChevronDown as IconDown,
+  IoImagesOutline as IconMedia
 }
