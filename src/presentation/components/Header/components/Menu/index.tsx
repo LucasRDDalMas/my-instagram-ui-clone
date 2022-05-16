@@ -6,7 +6,7 @@ import { IconUp, MenuWrapper, ProfileImage, ProfileImageWrapper, ProfileMenu, Pr
 import { IconBookmark, IconCompass, IconGearWide, IconHeart, IconHome, IconMessenger, IconOutlineHome, IconPlusSquare, IconProfile, IconSwitch } from '@/presentation/assets/icons'
 import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
 import { Divider } from '@/presentation/components/shared/styles'
-import ImageUpload from '@/presentation/components/ImageUpload'
+import CreatePost from '@/presentation/components/CreatePost'
 
 const Menu: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -52,7 +52,7 @@ const Menu: React.FC = () => {
           </ProfileMenu>
         )}
       </ProfileImageWrapper>
-      <ImageUpload setShouldShow={setShowImageUpload} shouldShow={showImageUpload} />
+      <CreatePost setShouldShow={setShowImageUpload} shouldShow={showImageUpload} />
     </MenuWrapper>
   )
 }
