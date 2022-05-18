@@ -1,7 +1,7 @@
-import { IconImages } from '@/presentation/assets/icons'
+import { IconExpand, IconImages, IconZoom } from '@/presentation/assets/icons'
 import React, { MutableRefObject } from 'react'
 import { Title } from '../styles'
-import { Image, ImageUploadWrapper, Option, OptionButton } from './styles'
+import { Image, ImageUploadWrapper, ImageZoomOptions, MultipleImageOption, Option, OptionButton } from './styles'
 
 interface IModal {
   reference: MutableRefObject<any>
@@ -14,11 +14,23 @@ const Crop: React.FC<IModal> = ({ reference }: IModal) => {
         Crop
       </Title>
       <Image>
-        <Option>
+        <ImageZoomOptions>
+          <Option>
+            <OptionButton>
+              <IconExpand size='14' width='14' height='14' color='#FFF' />
+            </OptionButton>
+          </Option>
+          <Option>
+            <OptionButton>
+              <IconZoom size='14' width='14' height='14' color='#FFF' />
+            </OptionButton>
+          </Option>
+        </ImageZoomOptions>
+        <MultipleImageOption>
           <OptionButton>
             <IconImages size='14' width='14' height='14' color='#FFF' />
           </OptionButton>
-        </Option>
+        </MultipleImageOption>
       </Image>
     </ImageUploadWrapper>
   )

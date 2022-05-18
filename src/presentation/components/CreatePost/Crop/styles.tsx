@@ -31,10 +31,15 @@ export const Image = styled.div`
   background-color: red;
 `
 
-export const Option = styled.div`
+export const ImageZoomOptions = styled.div`
   position: absolute;
+  display: flex;
+  flex-direction: row;
   bottom: 15px;
-  right: 15px;
+  left: 15px;
+`
+
+export const Option = styled.div`
   box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
   background: rgba(26,26,26,.8);
   border-radius: 50%;
@@ -47,6 +52,17 @@ export const Option = styled.div`
   cursor: pointer;
 `
 
+export const MultipleImageOption = styled(Option)`
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+`
+
 export const OptionButton = styled.button`
   padding: 8px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
