@@ -37,18 +37,3 @@ export const CloseButton = styled.button`
   top: 10px;
   right: 10px;
 `
-
-export const Title = styled.span`
-  display: flex;
-  flex-direction: row;
-  height: 43px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid var(--border);
-  position: relative;
-  
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-`

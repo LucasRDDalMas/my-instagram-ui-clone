@@ -1,18 +1,13 @@
 import { IconExpand, IconImages, IconZoom } from '@/presentation/assets/icons'
-import React, { MutableRefObject } from 'react'
-import { Title } from '../styles'
+import React from 'react'
+import { ISubModal } from '..'
+import Title from '../Title'
 import { Image, ImageUploadWrapper, ImageZoomOptions, MultipleImageOption, Option, OptionButton } from './styles'
 
-interface IModal {
-  reference: MutableRefObject<any>
-}
-
-const Crop: React.FC<IModal> = ({ reference }: IModal) => {
+const Crop: React.FC<ISubModal> = ({ reference, next, previous }: ISubModal) => {
   return (
     <ImageUploadWrapper ref={reference}>
-      <Title>
-        Crop
-      </Title>
+      <Title title='Crop' next={next} previous={previous} />
       <Image>
         <ImageZoomOptions>
           <Option>

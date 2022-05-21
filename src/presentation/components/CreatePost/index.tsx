@@ -1,6 +1,6 @@
 import { IconClose } from '@/presentation/assets/icons'
 import { useOutsideAlerter } from '@/presentation/utils/outside-alerter'
-import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
+import React, { Dispatch, MutableRefObject, SetStateAction, useEffect, useRef, useState } from 'react'
 import Crop from './Crop'
 import { CloseButton, Wrapper } from './styles'
 import UploadImage from './UploadImage'
@@ -10,11 +10,34 @@ interface IModal {
   shouldShow: boolean
 }
 
+export interface ISubModal {
+  reference: MutableRefObject<any>
+  next?: () => void
+  previous?: () => void
+}
+
 const CreatePost: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => {
+  const [position, setPosition] = useState<number>(0)
   const modalRef = useRef(null)
+
+  const previous = (): void => {
+    setPosition(position - 1)
+  }
+
+  const next = (): void => {
+    setPosition(position + 1)
+  }
+
+  const tabs: JSX.Element[] = [
+    <UploadImage key='upload' reference={modalRef} next={next} />,
+    <Crop key='crop' reference={modalRef} previous={previous} next={next} />
+  ]
 
   const closeModel = (): void => {
     setShouldShow(false)
+    setTimeout(() => {
+      setPosition(0)
+    }, 500)
   }
 
   useOutsideAlerter(modalRef, closeModel)
@@ -32,8 +55,7 @@ const CreatePost: React.FC<IModal> = ({ shouldShow, setShouldShow }: IModal) => 
       <CloseButton onClick={() => closeModel()}>
         <IconClose size='32' color='#FFF' />
       </CloseButton>
-      <UploadImage reference={modalRef} />
-      <Crop reference={modalRef} />
+      {tabs[position]}
     </Wrapper>
   )
 }
