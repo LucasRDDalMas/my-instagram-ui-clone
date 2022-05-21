@@ -159,3 +159,20 @@ export const SlideRange = styled.input`
     cursor: pointer;
   }
 `
+
+export const UploadMore = styled.div<IShow>`
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(26,26,26,.8);
+  border-radius: 8px;
+  height: 32px;
+  width: 132px;
+  ${({ shouldShow }: IShow) => { if (shouldShow) return showComponent }}
+  top: -10px;
+  transform: translateY(-100%);
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+`
