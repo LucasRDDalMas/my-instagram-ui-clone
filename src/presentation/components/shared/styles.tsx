@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export interface IShow {
+  shouldShow: boolean
+}
+
+export const showComponent = 'visibility: visible;opacity: 1; transition: visibility 0.4s ease-in, opacity 0.4s ease-in;'
+
 const IconBase = styled.div`
   height: 45px;
   width: 45px;

@@ -1,11 +1,8 @@
 import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
+import { IShow, showComponent } from '@/presentation/components/shared/styles'
 
-interface IWrapper {
-  shouldShow: boolean
-}
-
-export const Wrapper = styled.div<IWrapper>`
+export const Wrapper = styled.div<IShow>`
   position: fixed;
   top: 0;
   left: 0;
@@ -20,9 +17,7 @@ export const Wrapper = styled.div<IWrapper>`
   z-index: 4;
   transition: visibility 0.4s ease-in, opacity 0.4s ease-out;
 
-  ${(props: IWrapper) => {
-    if (props.shouldShow) return 'visibility: visible;opacity: 1; transition: visibility 0.4s ease-in, opacity 0.4s ease-in;'
-  }}
+  ${({ shouldShow }: IShow) => { if (shouldShow) return showComponent }}
 `
 
 export const PopUpWrapper = styled.div`
