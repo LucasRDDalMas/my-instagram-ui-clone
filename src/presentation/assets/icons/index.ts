@@ -1,5 +1,5 @@
-import { AiOutlineSmile, AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
-import { BsGearWide, BsThreeDots, BsFiles, BsZoomIn, BsCardImage } from 'react-icons/bs'
+import { AiOutlinePlayCircle, AiOutlineSmile, AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
+import { BsGearWide, BsThreeDots, BsFiles, BsZoomIn, BsCardImage, BsGrid3X3 } from 'react-icons/bs'
 import { FiUserCheck, FiPlusSquare, FiMessageSquare, FiHeart, FiBookmark, FiTwitter, FiChevronDown } from 'react-icons/fi'
 import { MdOutlineExplore, MdVerified, MdOutlineCrop169, MdCropDin, MdCropPortrait } from 'react-icons/md'
 import { RiMessengerLine, RiCloseFill } from 'react-icons/ri'
@@ -7,7 +7,7 @@ import { CgProfile } from 'react-icons/cg'
 import { GrPowerCycle, GrSend } from 'react-icons/gr'
 import { IoIosArrowRoundBack } from 'react-icons/io'
 import { IoImagesOutline } from 'react-icons/io5'
-import { BiImages, BiExpandAlt } from 'react-icons/bi'
+import { BiImages, BiExpandAlt, BiUserPin } from 'react-icons/bi'
 
 export {
   AiFillHome as IconHome,
@@ -46,5 +46,8 @@ export {
   MdOutlineCrop169 as IconRatio169,
   MdCropDin as IconRatio11,
   MdCropPortrait as IconRatio45,
-  FiUserCheck as IconUserCheck
+  FiUserCheck as IconUserCheck,
+  BsGrid3X3 as IconGrid,
+  AiOutlinePlayCircle as IconPlay,
+  BiUserPin as IconUserPin
 }

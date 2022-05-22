@@ -1,3 +1,4 @@
+import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
 
 export const ProfileStatusWrapper = styled.div`
@@ -24,29 +25,20 @@ export const Verified = styled.div`
   margin-left: 8px;
 `
 
-export const Button = styled.button`
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  margin-left: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`
-
-export const ButtonFollow = styled(Button)`
-  margin-left: 8px;
-  padding: 0 24px;
-`
-
-export const ButtonSuggestion = styled(Button)`
-  margin-left: 8px;
-  padding: 0 12px;
-`
-
 export const Options = styled.button`
   margin-left: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+`
+
+export const ProfileStatusButtonsWrapper = styled.div`
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  ${device.md`
+    opacity: 1;
+    visibility: visible;
+    display: unset;
+  `}
 `

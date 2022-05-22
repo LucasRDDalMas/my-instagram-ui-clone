@@ -1,8 +1,14 @@
+import { device } from '@/presentation/utils/media-query'
 import styled from 'styled-components'
 
 export const ProfileUserInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 12px;
+
+  ${device.md`
+    padding: 0;
+  `}
 `
 
 export const ProfileName = styled.span`

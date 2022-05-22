@@ -1,20 +1,34 @@
 import React from 'react'
-import { ProfileHeaderWrapper, ProfileStatusWrapper } from './styles'
+import { ProfileColumn, ProfileDesktop, ProfileHeaderWrapper, ProfileMobile, ProfileStatusWrapper } from './styles'
 import ProfileImage from './components/ProfileImage'
 import ProfileStatus from './components/ProfileStatus'
 import ProfileNumbers from './components/ProfileNumbers'
 import ProfileUserInfo from './components/ProfileInfo'
+import ProfileStatusButtons from './components/ProfileStatusButtons'
 
 const ProfileHeader: React.FC = () => {
   return (
-    <ProfileHeaderWrapper>
-      <ProfileImage />
-      <ProfileStatusWrapper>
-        <ProfileStatus />
-        <ProfileNumbers />
+    <>
+      <ProfileHeaderWrapper>
+        <ProfileImage />
+        <ProfileColumn>
+          <ProfileStatusWrapper>
+            <ProfileStatus />
+            <ProfileDesktop>
+              <ProfileNumbers />
+              <ProfileUserInfo />
+            </ProfileDesktop>
+          </ProfileStatusWrapper>
+          <ProfileMobile>
+            <ProfileStatusButtons />
+          </ProfileMobile>
+        </ProfileColumn>
+      </ProfileHeaderWrapper>
+      <ProfileMobile>
         <ProfileUserInfo />
-      </ProfileStatusWrapper>
-    </ProfileHeaderWrapper>
+        <ProfileNumbers />
+      </ProfileMobile>
+    </>
   )
 }
 
