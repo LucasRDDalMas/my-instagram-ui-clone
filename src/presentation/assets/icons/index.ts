@@ -1,6 +1,6 @@
 import { AiOutlineSmile, AiOutlineRight, AiFillHome, AiOutlineSearch, AiOutlineCamera, AiOutlineHome, AiFillLeftCircle, AiFillRightCircle, AiOutlineMail, AiOutlineLink, AiOutlineFacebook } from 'react-icons/ai'
 import { BsGearWide, BsThreeDots, BsFiles, BsZoomIn, BsCardImage } from 'react-icons/bs'
-import { FiPlusSquare, FiMessageSquare, FiHeart, FiBookmark, FiTwitter, FiChevronDown } from 'react-icons/fi'
+import { FiUserCheck, FiPlusSquare, FiMessageSquare, FiHeart, FiBookmark, FiTwitter, FiChevronDown } from 'react-icons/fi'
 import { MdOutlineExplore, MdVerified, MdOutlineCrop169, MdCropDin, MdCropPortrait } from 'react-icons/md'
 import { RiMessengerLine, RiCloseFill } from 'react-icons/ri'
 import { CgProfile } from 'react-icons/cg'
@@ -45,5 +45,6 @@ export {
   BsCardImage as IconRatioOriginal,
   MdOutlineCrop169 as IconRatio169,
   MdCropDin as IconRatio11,
-  MdCropPortrait as IconRatio45
+  MdCropPortrait as IconRatio45,
+  FiUserCheck as IconUserCheck
 }
